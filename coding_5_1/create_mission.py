@@ -168,7 +168,7 @@ def build_mission(master, lat_deg, lon_deg, alt_m=15.0):
         master=master,
         base_lat_deg=lat_deg,
         base_lon_deg=lon_deg,
-        north_m=150.0,   # 100 м на север
+        north_m=300.0,   # 100 м на север
         east_m=-100.0,    # 100 м на восток
         alt_m=alt_m,
         current=0,
@@ -180,7 +180,7 @@ def build_mission(master, lat_deg, lon_deg, alt_m=15.0):
         master=master,
         base_lat_deg=lat_deg,
         base_lon_deg=lon_deg,
-        north_m=-50.0,   # на север
+        north_m=-250.0,   # на север
         east_m=300.0,    # на восток
         alt_m=alt_m,
         current=0,
@@ -225,7 +225,7 @@ def main():
     lat, lon = get_current_position(master)
 
     # 3. Создать простую миссию с использованием новых функций
-    wp_loader = build_mission(master, lat, lon, alt_m=50.0)
+    wp_loader = build_mission(master, lat, lon, alt_m=30.0)
 
     # 4. Загрузить полётное задание в контроллер
     upload_mission(master, wp_loader)
