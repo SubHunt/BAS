@@ -3,16 +3,11 @@
 # Автор: Дмитрий Мокачев
 # Используется: pymavlink + pyproj для геодезии WGS84
 # =====================================================
-# import sys
-# import threading
-# import time
+
 
 # подключаем нужные библиотеки
 from pymavlink import mavutil, mavwp  # для связи с дроном по MAVLink
 from pyproj import Geod               # Точные геодезические расчеты (WGS84)
-# from drone_monitor import DroneState, monitor_loop
-# from flight_control import set_mode_guided
-# Математические функции (гипотенуза, углы)
 import math
 
 # Для расчета координат

@@ -1,1 +1,7 @@
 venv
+/exam1
+exam1/
+__pycache__/
+exam/__pycache__/
+exam/venv/
+coding_5_1/__pycache__/
